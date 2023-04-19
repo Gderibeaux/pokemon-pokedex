@@ -13,13 +13,22 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://pokemon-origins.gitlab.io/api/pokemons')
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=100')
       .then(response => response.json())
       .then(data => {
         console.log('maybe data', data)
-        // Filter the data to only include the first 100 Pokemon
-        const filteredData = data.slice(0, 100);
-        this.setState({ pokemon: filteredData })
+        const results = data.results;
+        const pokemonPromises = results.map(pokemon => {
+          return fetch(pokemon.url).then(response => response.json());
+        });
+        Promise.all(pokemonPromises)
+          .then(pokemonData => {
+            this.setState({ pokemon: pokemonData })
+          })
+          .catch(error => {
+            console.error(error.message);
+            this.setState({ error: error.message });
+          });
       })
       .catch(error => {
         console.error(error.message);
@@ -46,4 +55,3 @@ class App extends Component {
 }
 
 export default App;
-

@@ -8,8 +8,8 @@ const Pokemon = ({ pokeData, error }) => {
       <PokeCard
         id={pokemon.id}
         key={pokemon.id}
-        // name={`https://pokemon-origins.gitlab.io/api/pokemons/EN/${pokemon.id}/`}
-        img={`https://pokemon-origins.gitlab.io/api/images/pokemons/animated/${pokemon.id}.gif`}
+        name={pokemon.name}
+        img={pokemon.sprites.front_default}
       />
     );
   });
@@ -20,7 +20,7 @@ const Pokemon = ({ pokeData, error }) => {
       {error && <div className="error">{error}</div>}
       <ul className="poke-list">{pokeCards}</ul>
     </>
-    )
+  );
 };
 
 export default Pokemon;
