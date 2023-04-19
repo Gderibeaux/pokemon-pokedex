@@ -36,11 +36,10 @@ class SinglePoke extends Component {
             <img
               src={single.sprites.front_default}
               alt={single.name}
-              width="150"
-              height="150"
+
             />
             <p>
-              Height: {single.height} | Weight: {single.weight}
+              Height: {single.height}m| Weight: {single.weight}lbs
             </p>
             <p>Type:</p>
             <ul>
