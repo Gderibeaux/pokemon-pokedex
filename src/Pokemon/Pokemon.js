@@ -16,7 +16,6 @@ const Pokemon = ({ pokeData, error }) => {
 
   return (
     <>
-      <h1>PokeList</h1>
       {error && <div className="error">{error}</div>}
       <ul className="poke-list">{pokeCards}</ul>
     </>

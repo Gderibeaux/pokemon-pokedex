@@ -23,5 +23,8 @@ describe('homepage', () => {
       .url().should('include', '/1')
       .url().should('not.eq', 'http://localhost:3000/')
   });
-
+  it('should show either a catch or need toggle button', () => {
+    cy.get('.poke-list')
+      .get(':nth-child(1) > button').contains('Need')
+  })
 })

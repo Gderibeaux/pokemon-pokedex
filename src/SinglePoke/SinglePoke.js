@@ -47,9 +47,9 @@ class SinglePoke extends Component {
                 <li key={type.slot}>{type.type.name}</li>
               ))}
             </ul>
-            <Link to="/pokemon-pokedex/">
+            {/* <Link className="go-home" to="/pokemon-pokedex/">
                 <button>Go Home</button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       );

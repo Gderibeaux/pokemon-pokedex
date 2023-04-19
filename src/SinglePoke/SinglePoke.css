@@ -1,0 +1,23 @@
+.information {
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff89;
+    border-radius: 10px;
+    width: 30vw;
+    line-height: 1.6;
+  }
+  
+  /* .backdrop {
+    height: 100vh;
+    background-size: cover;
+  } */
+  
+  button {
+    margin: 10px;
+  }
+  

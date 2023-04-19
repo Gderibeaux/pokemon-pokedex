@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Pokemon from './Pokemon/Pokemon'
 import SinglePoke from './SinglePoke/SinglePoke'
 import {Route, Switch} from 'react-router-dom'
+import Header from './Header/Header'
 
 class App extends Component {
   constructor() {
@@ -40,7 +41,7 @@ class App extends Component {
     const { pokemon, error } = this.state;
     return (
       <div className="App">
-        <h1>Pokemon List</h1>
+        <Header />
         <Switch>
         <Route exact path="/Pokemon-Pokedex/" render={() => <Pokemon pokeData={pokemon} error={error} />}/>
         <Route 
