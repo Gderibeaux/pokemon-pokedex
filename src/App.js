@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import { fetchPokemon } from './apiCalls/apiCalls';
+import Pokemon from './Pokemon/Pokemon'
+import {Route} from 'react-router-dom'
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      pokemon: [],
+      error: "",
+    }
+  }
+
+  componentDidMount() {
+    fetch('https://pokemon-origins.gitlab.io/api/pokemons')
+      .then(response => response.json())
+      .then(data => {
+        console.log('maybe data', data)
+        this.setState({ pokemon: data })
+      })
+      .catch(error => {
+        console.error(error.message);
+        this.setState({ error: error.message });
+      });
+  }
+
+  render() {
+    const { pokemon, error } = this.state;
+    return (
+      <div className="App">
+        <h1>Pokemon List</h1>
+        <Route exact path="/Pokemon-Pokedex/" render={() => <Pokemon pokeData={pokemon} error={error} />}/>
+      </div>
+    );
+  }
 }
 
 export default App;
+
