@@ -1,0 +1,9 @@
+.poke-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #c93038, #e3d9da, #c93038);
+    border-width: 2px;
+    border-color: black;
+    }
+    
