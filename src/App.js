@@ -1,8 +1,7 @@
-
 import React, { Component } from 'react';
-import { fetchPokemon } from './apiCalls/apiCalls';
 import Pokemon from './Pokemon/Pokemon'
-import {Route} from 'react-router-dom'
+import SinglePoke from './SinglePoke/SinglePoke'
+import {Route, Switch} from 'react-router-dom'
 
 class App extends Component {
   constructor() {
@@ -18,7 +17,9 @@ class App extends Component {
       .then(response => response.json())
       .then(data => {
         console.log('maybe data', data)
-        this.setState({ pokemon: data })
+        // Filter the data to only include the first 100 Pokemon
+        const filteredData = data.slice(0, 100);
+        this.setState({ pokemon: filteredData })
       })
       .catch(error => {
         console.error(error.message);
@@ -31,7 +32,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Pokemon List</h1>
+        <Switch>
         <Route exact path="/Pokemon-Pokedex/" render={() => <Pokemon pokeData={pokemon} error={error} />}/>
+        <Route 
+          exact path="/Pokemon-Pokedex/:id" 
+          render={({match}) => {
+            return <SinglePoke id={match.params.id}/>}}
+            />
+        </Switch>
       </div>
     );
   }

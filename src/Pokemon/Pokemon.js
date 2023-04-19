@@ -6,6 +6,7 @@ const Pokemon = ({ pokeData, error }) => {
   const pokeCards = pokeData.map((pokemon) => {
     return (
       <PokeCard
+        id={pokemon.id}
         key={pokemon.id}
         // name={`https://pokemon-origins.gitlab.io/api/pokemons/EN/${pokemon.id}/`}
         img={`https://pokemon-origins.gitlab.io/api/images/pokemons/animated/${pokemon.id}.gif`}
