@@ -3,6 +3,7 @@ import Pokemon from './Pokemon/Pokemon'
 import SinglePoke from './SinglePoke/SinglePoke'
 import {Route, Switch} from 'react-router-dom'
 import Header from './Header/Header'
+import Error from './Error/Error'
 
 class App extends Component {
   constructor() {
@@ -43,12 +44,13 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
-        <Route exact path="/Pokemon-Pokedex/" render={() => <Pokemon pokeData={pokemon} error={error} />}/>
-        <Route 
-          exact path="/Pokemon-Pokedex/:id" 
-          render={({match}) => {
-            return <SinglePoke id={match.params.id}/>}}
-            />
+          <Route exact path="/Pokemon-Pokedex/" render={() => <Pokemon pokeData={pokemon} error={error} />}/>
+          <Route 
+            exact path="/Pokemon-Pokedex/:id" 
+            render={({match}) => {
+              return <SinglePoke id={match.params.id}/>}}
+              />
+          <Route path="*" render={()=> <Error/>}/>
         </Switch>
       </div>
     );
