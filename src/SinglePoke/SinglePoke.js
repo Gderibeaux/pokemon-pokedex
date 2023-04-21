@@ -42,10 +42,10 @@ class SinglePoke extends Component {
         {
           label: single && single.name,
           backgroundColor: "rgba(255, 99, 132, 0.2)",
-          borderColor: "rgba(255, 99, 132, 1)",
+          borderColor: "#ffffff",
           pointBackgroundColor: "rgba(255, 99, 132, 1)",
-          pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "#fff",
+          pointBorderColor: "#ffffff",
+          pointHoverBackgroundColor: "#ffffff",
           pointHoverBorderColor: "rgba(255, 99, 132, 1)",
           data: single
             ? [
