@@ -4,6 +4,7 @@ import SinglePoke from './SinglePoke/SinglePoke'
 import {Route, Switch} from 'react-router-dom'
 import Header from './Header/Header'
 import Error from './Error/Error'
+import './App.css'
 
 class App extends Component {
   constructor() {
@@ -15,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=100')
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
       .then(response => response.json())
       .then(data => {
         console.log('maybe data', data)

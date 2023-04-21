@@ -1,7 +1,8 @@
 .information {
-    position: absolute;
-    bottom: 5vh;
-    left: 5vw;
+    /* position: absolute; */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -12,12 +13,18 @@
     line-height: 1.6;
   }
   
-  /* .backdrop {
-    height: 100vh;
-    background-size: cover;
-  } */
-  
   button {
     margin: 10px;
   }
-  
+  .backdrop{
+    display: flex;
+    flex-direction: row;
+  }
+.chart-container{
+  /* position: absolute; */
+  margin-top: 4vh;
+  margin-right: 0;
+  width: 60vw;
+  height: 60vh;
+  margin-left: 25vw;
+}
