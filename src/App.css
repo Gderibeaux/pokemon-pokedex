@@ -7,11 +7,11 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +36,455 @@
     transform: rotate(360deg);
   }
 }
+/* Tiny Screen */
+/* @media screen and (max-width: 280px) {
+  header{
+    width:100%
+  }
+  h3{
+    font-size: 2vw;
+    
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    position: absolute;
+    top: 20vh;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff89;
+    border-radius: 10px;
+    width: 80vw;
+    line-height: 1.6;
+  }
+  .chart-container{
+    position: absolute;
+    margin-top: 95vh;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+  }
+  } */
+/* Small Screen */
+/* @media screen and (max-width: 360px) {
+h3{
+  font-size: 3vw;
+  
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 10px;
+}
+.information {
+  position: absolute;
+  top: 1vh;
+  bottom: 5vh;
+  left: 5vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: pink;
+  border-radius: 10px;
+  width: 80vw;
+  line-height: 1.6;
+}
+.chart-container{
+  margin-top: 95vh;
+  right: 0;
+  top: 0;
+  width: 10px;
+  margin-left: 2vw;
+}
+
+} */
+
+/* Medium Screen */
+/* @media screen and (max-width: 425px) {
+  h3{
+    font-size: 3vw;
+    
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    position: absolute;
+    margin-top: 20vh;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: green;
+    border-radius: 10px;
+    width: 80vw;
+    line-height: 1.6;
+  }
+  .chart-container{
+    margin-top: 95vh;
+    right: 0;
+    top: 0;
+    width: 400px;
+    margin-left: 20vw;
+  }
+  .pokeCard{
+    height: 10vh;
+    
+  }
+} */
+/* 
+Medium-Large Screen */
+/* @media screen and (max-width: 635px){
+  h3{
+    font-size: 3vw;
+    
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: blue;
+    border-radius: 10px;
+    width: 80vw;
+    line-height: 1.6;
+  }
+  .chart-container{
+    margin-top: 95vh;
+    right: 0;
+    top: 0;
+    margin-right: 0px;
+    margin-left: 9000vw;
+  }
+.pokeCard{
+  height: 50vh;
+  
+}
+} */
+
+
+/* Large Screen */
+/* @media screen and (max-width: 1100px){
+  h3{
+    font-size: 3vw;
+    
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    position: absolute;
+    top: 20vh;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff89;
+    border-radius: 10px;
+    width: 40vw;
+    line-height: 1.6;
+    height: 85vh;
+  }
+  .chart-container{
+    position: absolute;
+    margin-top: 15vh;
+    width: 400px;
+    margin-left: 1vw;
+  
+  }
+.pokeCard{
+  height: 50vh;
+  
+}
+} */
+
+/* Tiny Screen */
+@media screen and (max-width: 280px) {
+  h3{
+    font-size: 3.5vw;
+  }
+  a{
+    font-size: 17px;
+  }
+ .pokeCard{
+  height: 40vh;
+  width: 23vw;
+ }
+
+ ul {
+  /* display: block; */
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 10px;
+}
+
+.information {
+  margin-top: 2vh;
+  bottom: 5vh;
+  left: 5vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff89;;
+  border-radius: 10px;
+  width: 80vw;
+  line-height: 1.6;
+}
+.backdrop{
+  display: flex;
+  flex-direction: column;
+}
+.single-img{
+  height: 50vh;
+  width: 50vw;
+}
+.chart-container {
+  margin-top: 5vh;
+  right: 0;
+  top: 0;
+  margin-left: 1vw;
+  width: 98vw;
+}
+}
+
+/* Small Screen */
+@media screen and (min-width: 281px) and (max-width: 360px) {
+
+  h3{
+    font-size: 3.5vw;
+  }
+  a{
+    font-size: 17px;
+  }
+  .pokeCard{
+    height: 40vh;
+    width: 23vw;
+   }
+  ul {
+    /* display: block; */
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    margin-top: 2vh;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff89;;
+    border-radius: 10px;
+    width: 80vw;
+    line-height: 1.6;
+  }
+  .backdrop{
+    display: flex;
+    flex-direction: column;
+  }
+  .single-img{
+    height: 50vh;
+    width: 50vw;
+  }
+  .chart-container {
+    margin-top: 5vh;
+    right: 0;
+    top: 0;
+    margin-left: 1vw;
+    width: 98vw;
+  }
+}
+
+/* Medium Screen */
+@media screen and (min-width: 361px) and (max-width: 425px) {
+  h1 {
+    font-size: 4vh;
+  }
+  h3{
+    font-size: 3.5vw;
+  }
+  a{
+    font-size: 17px;
+  }
+  .pokeCard{
+    height: 42vh;
+    width: 23vw;
+   }
+  ul {
+    /* display: block; */
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    margin-top: 2vh;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff89;;
+    border-radius: 10px;
+    width: 85vw;
+    line-height: 1.6;
+  }
+  .backdrop{
+    display: flex;
+    flex-direction: column;
+  }
+  .single-img{
+    height: 30vh;
+    width: 50vw;
+  }
+  .chart-container {
+    margin-top: 5vh;
+    width: 98vw;
+    margin-left: 1vw;
+  }
+}
+
+/* Medium-Large Screen */
+@media screen and (min-width: 426px) and (max-width: 682px) {
+
+  h3{
+    font-size: 3vw;
+    
+  }
+  ul {
+    /* display: block; */
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    margin-top: 2vh;
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff89;;
+    border-radius: 10px;
+    width: 85vw;
+    line-height: 1.6;
+  }
+  .backdrop{
+    display: flex;
+    flex-direction: column;
+  }
+  .single-img{
+    height: 30vh;
+    width: 50vw;
+  }
+  .chart-container {
+    margin-top: 5vh;
+    width: 98vw;
+    margin-left: 1vw;
+  }
+.pokeCard{
+  height: 50vh;
+  
+}
+} 
+
+/* Large Screen */
+@media screen and (min-width: 683px) and (max-width: 1100px) {
+  h3{
+    font-size: 3vw;
+    
+  }
+  ul {
+    /* display: block; */
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .information {
+    bottom: 5vh;
+    left: 5vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff89;
+    border-radius: 10px;
+    width: 80vw;
+    line-height: 1.6;
+  }
+  .chart-container{
+    margin-top: 20vh;
+    right: 0;
+    top: 0;
+    margin-right: 0px;
+    margin-left: 1vw;
+  }
+.pokeCard{
+  height: 50vh;
+  
+}
+} 
