@@ -4,6 +4,7 @@ import SinglePoke from './SinglePoke/SinglePoke'
 import {Route, Switch} from 'react-router-dom'
 import Header from './Header/Header'
 import Error from './Error/Error'
+import TypeChart from './TypeAdvantage/TypeAdvantage';
 import './App.css'
 
 class App extends Component {
@@ -51,6 +52,7 @@ class App extends Component {
             render={({match}) => {
               return <SinglePoke id={match.params.id}/>}}
               />
+          <Route exact path="/Pokemon-Pokedex/advantages/1" render={()=> <TypeChart />} />
           <Route path="*" render={()=> <Error/>}/>
         </Switch>
       </div>
