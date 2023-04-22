@@ -1,6 +1,6 @@
 describe('homepage', () => {
   beforeEach('visit homepage', () => {
-    cy.intercept('GET', 'https://pokeapi.co/api/v2/pokemon?limit=10', {
+    cy.intercept('GET', 'https://pokeapi.co/api/v2/pokemon?limit=100', {
       fixture: 'allPokemon.json'
   })
   cy.intercept('GET', 'https://pokeapi.co/api/v2/pokemon/1/', {
