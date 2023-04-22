@@ -1,5 +1,4 @@
 .information {
-    /* position: absolute; */
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 5vw;
@@ -21,7 +20,6 @@
     flex-direction: row;
   }
 .chart-container{
-  /* position: absolute; */
   margin-top: 4vh;
   margin-right: 0;
   width: 60vw;

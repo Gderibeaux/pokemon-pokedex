@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
 import { Radar } from "react-chartjs-2";
 import Chart from 'chart.js/auto';
 import "./SinglePoke.css";
+import { fetchPokemonById } from '../apiCalls/apiCalls';
 
 class SinglePoke extends Component {
   constructor(props) {
@@ -13,18 +13,14 @@ class SinglePoke extends Component {
     };
   }
 
-  componentDidMount() {
-    const { id } = this.props;
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("new data", data);
-        this.setState({ single: data });
-      })
-      .catch((error) => {
-        console.error(error.message);
-        this.setState({ error: error.message });
-      });
+  async componentDidMount() {
+    try {
+      const { id } = this.props;
+      const data = await fetchPokemonById(id);
+      this.setState({ single: data });
+    } catch (error) {
+      this.setState({ error: error.message });
+    }
   }
 
   render() {
@@ -108,7 +104,7 @@ class SinglePoke extends Component {
     } else if (error) {
       whatToRender = <p className="Error">{error}</p>;
     } else {
-      whatToRender = <p>Loading...</p>;
+         whatToRender = <p>Loading...</p>;
     }
 
     return <>{whatToRender}</>;

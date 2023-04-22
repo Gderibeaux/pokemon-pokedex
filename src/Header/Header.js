@@ -11,7 +11,7 @@ const Header = () => {
       <h1>PokeDex</h1>
       <div className='nav-links'>
         <Link to='/pokemon-pokedex'> HOME </Link>
-        <Link to='/pokemon-pokedex/quiz'> Quiz </Link>
+        <Link to='/pokemon-pokedex/advantages/1'> Types </Link>
       </div>
     </header>
   );
