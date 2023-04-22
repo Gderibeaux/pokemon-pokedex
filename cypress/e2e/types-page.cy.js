@@ -1,5 +1,5 @@
-describe('homepage', () => {
-    beforeEach('visit homepage', () => {
+describe('TypesPage', () => {
+    beforeEach('visit TypesPage', () => {
       cy.visit('http://localhost:3000/pokemon-pokedex/advantages/1')
     });
   
