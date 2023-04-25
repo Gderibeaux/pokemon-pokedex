@@ -29,7 +29,7 @@ This project is easy to use and accessible on any device. Please relax and enjoy
 
 ## Deployed Page
 
-Visit our deployed [PokeDex]()
+Visit our deployed [PokeDex](https://gderibeaux.github.io/pokemon-pokedex)
 
 ## Wins
 - Successfully integrated and utilized data from an unfamiliar API to enhance the app's functionality.
