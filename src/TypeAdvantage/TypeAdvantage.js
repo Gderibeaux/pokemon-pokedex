@@ -1,4 +1,5 @@
 import React from 'react'
+import "./TypesAdvantage.css"
 
 const types = [
     { name: "Normal", effectiveness: ["None"], weaknesses: ["Fighting"]},
@@ -23,12 +24,12 @@ const types = [
   
   function TypeChart() {
     return (
-      <table>
+      <table className="custom-table">
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Effectiveness</th>
-            <th>Weaknesses</th>
+            <th>Pokemon Type</th>
+            <th>Strengths</th>
+            <th>Vulnerabilities</th>
           </tr>
         </thead>
         <tbody>
